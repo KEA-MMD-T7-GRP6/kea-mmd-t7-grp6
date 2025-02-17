@@ -1,0 +1,79 @@
+/************ Reset ***************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #8c3929;
+}
+
+/*********** header menu ***********/
+.logo {
+  width: 30%;
+  margin-top: 15px;
+}
+
+/************** Burgermenu *********/
+.burger {
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/****** styling af striber ****/
+.bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px 0;
+  background-color: #c4fad7;
+}
+
+/******* skjult burgermenu overlay **********/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: #ffffed;
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+/***** indhold i overlay menuen ******/
+.overlay-content {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/***** styling af links inde i overlay ******/
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #8c3929;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  text-decoration: underline;
+  color: #780000;
+}
