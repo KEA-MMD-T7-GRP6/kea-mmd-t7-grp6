@@ -15,9 +15,18 @@ body {
 }
 
 /*********** header menu ***********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .logo {
-  width: 30%;
+  max-width: 30%;
   margin-top: 15px;
+  margin-left: 10px;
+  flex-shrink: 0;
 }
 
 /************** Burgermenu *********/
@@ -60,11 +69,15 @@ body {
   margin-top: 30px;
 }
 
+.header-menu {
+  display: none;
+}
+
 /***** styling af links inde i overlay ******/
 .overlay a {
   padding: 10px;
   text-decoration: none;
-  font-family: "Poppins", serif;
+  font-family: "Lora", serif;
   font-weight: 400;
   font-size: 30px;
   color: #8c3929;
@@ -75,5 +88,48 @@ body {
 .overlay a:hover,
 .overlay a:focus {
   text-decoration: underline;
-  color: #780000;
+  color: #8c3929;
+}
+
+/****** Når overlayet er åbent, skift farve til rød ******/
+.burger.change .bar {
+  background-color: #8c3929;
+}
+
+/**** Media query til store skærme  ******/
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .header-menu {
+    display: flex;
+  }
+
+  .logo {
+    width: 10%;
+  }
+  .header-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+
+  .header-menu a {
+    text-decoration: none;
+    font-size: 26px;
+    color: #c4fad7;
+    font-family: "Lora", serif;
+  }
+
+  .header-menu a:hover {
+    text-decoration: underline;
+    color: #780000;
+  }
 }
