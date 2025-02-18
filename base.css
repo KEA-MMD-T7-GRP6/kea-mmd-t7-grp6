@@ -117,6 +117,73 @@ p {
   line-height: 170%;
 }
 
+/********* footer ******/
+.footer-logo {
+  max-width: 30%;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.social-links a {
+  color: #4d9775;
+  padding: 30px;
+  font-size: 35px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: #c4fad7;
+  cursor: pointer;
+}
+
+/********* form til footer ******/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+input[type="text"],
+button {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ffffed;
+  font-size: 16px;
+}
+
+.form-text {
+  padding: 8px;
+  border: 2px solid black;
+}
+
+button {
+  background: #ffffed;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #c4fad7;
+}
+
 /**** Media query til store skærme  ******/
 @media screen and (min-width: 768px) {
   .burger {
@@ -152,5 +219,42 @@ p {
   .header-menu a:hover {
     text-decoration: underline;
     color: #780000;
+  }
+  .footer-logo {
+    max-width: 12%;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .social-links a {
+    color: #4d9775;
+    padding: 10px;
+  }
+
+  .social-links a:hover {
+    color: #c4fad7;
+    cursor: pointer;
+  }
+  .contact-container {
+    align-content: left;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .form-row {
+    justify-content: space-between;
+  }
+
+  .footer-text h3,
+  .footer-text p {
+    font-size: 24px;
+  }
+
+  .social-links a {
+    font-size: 50px;
   }
 }

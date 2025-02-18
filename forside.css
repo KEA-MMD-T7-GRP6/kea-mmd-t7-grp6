@@ -17,7 +17,7 @@ html {
 
 /******* forside baggrund *******/
 .hero {
-  width: 100%;
+  width: 60vh;
   height: 100vh;
   background-image: url("billeder/forside.webp");
   display: flex;
@@ -25,43 +25,34 @@ html {
   align-items: center;
   background-size: cover;
   background-position: center;
-  position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 /****** logo styling ******/
 .logo-container {
   width: 100%;
   position: absolute;
-  top: 15%;
-  padding: 30px;
+  top: 29%;
+  padding: 20px;
 }
 
 /********* styling af pil forside *******/
 .pil-container {
+  display: inline-block;
   position: absolute;
-  top: 45%;
-  left: 55%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.pil1 {
-  width: 50px;
-  height: auto;
-  opacity: 0.8;
+  width: 10%;
+  margin-top: 70%;
   cursor: pointer;
+  z-index: 10;
 }
 
-.pil1:hover {
+.pil-container {
+  transition: filter 0.3s ease-in-out;
+}
+
+.pil-container:hover {
   transform: scale(1.1);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /*********** About us section *******/
@@ -70,7 +61,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 40px;
   height: 100vh;
   background-image: url("billeder/aboutus.webp");
   background-size: cover;
@@ -105,25 +96,13 @@ html {
     background-repeat: no-repeat;
     position: relative;
     align-items: center;
+    height: 105vh;
+    width: 100%;
   }
 
   .logo-container {
-    content: url("billeder/lillelogo.webp");
-    width: 65%;
-    top: 24%;
-    left: 30%;
-  }
-
-  .pil-container {
-    width: 50px;
-    top: 55%;
-    left: 50%;
-    opacity: 0.8;
-    cursor: pointer;
-  }
-
-  .pil1:hover {
-    transform: scale(1.1);
+    width: 70%;
+    top: 22%;
   }
 
   .about-section {
@@ -151,22 +130,20 @@ html {
   .kategori-pil {
     width: 20%;
   }
+  .pil-container {
+    margin-top: 40%;
+    width: 60px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .logo-container {
-    width: 55%;
+    width: 50%;
     top: 20%;
     left: 26%;
   }
-
   .pil-container {
-    width: 80px;
-    top: 60%;
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  .pil1:hover {
-    transform: scale(1.1);
+    margin-top: 28%;
+    width: 70px;
   }
 }
