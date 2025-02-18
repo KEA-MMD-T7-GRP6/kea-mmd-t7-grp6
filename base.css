@@ -12,6 +12,7 @@ img {
 
 body {
   background-color: #8c3929;
+  overflow-x: hidden;
 }
 
 /*********** header menu ***********/
@@ -96,6 +97,101 @@ header {
   background-color: #8c3929;
 }
 
+h1 strong {
+  font-family: "Roboto", Condensed Bold;
+  font-size: 50px;
+  color: #4d9775;
+}
+
+h1 {
+  font-family: "Roboto", Condensed Italic;
+  font-size: 50px;
+  color: #4d9775;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Lora", serif;
+  margin-top: 20px;
+  line-height: 170%;
+}
+
+/********* footer ******/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.social-links a {
+  color: #c4fad7;
+  padding: 30px;
+  font-size: 35px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: #4d9775;
+  cursor: pointer;
+}
+
+/******** form til footer *****/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+input[type="text"],
+button {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #8c3929;
+  font-size: 16px;
+}
+
+.form-text {
+  padding: 8px;
+}
+
+button {
+  background: #ffffed;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #c4fad7;
+}
+
 /**** Media query til store skærme  ******/
 @media screen and (min-width: 768px) {
   .burger {
@@ -131,5 +227,41 @@ header {
   .header-menu a:hover {
     text-decoration: underline;
     color: #780000;
+  }
+  .footer-logo {
+    max-width: 14%;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .social-links a {
+    color: #c4fad7;
+    padding: 10px;
+  }
+
+  .social-links a:hover {
+    color: #4d9775;
+    cursor: pointer;
+  }
+  .contact-container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .form-row {
+    justify-content: space-between;
+  }
+
+  .footer-text h3,
+  .footer-text p {
+    font-size: 24px;
+  }
+
+  .social-links a {
+    font-size: 50px;
   }
 }
