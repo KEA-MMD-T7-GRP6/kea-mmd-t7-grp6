@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corben&family=Lato:wght@700&family=Lexend+Exa:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="forside.css">
+
+    <!-- social links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- favicon-->
+    <link rel="icon" href="billeder/favicon.webp" type="image/favicon">
+
+    <title>Forside</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="forside.html">
+                <img src="billeder/lillelogo.webp" alt="lillelogo">
+            </a>
+        </div>
+
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+        <!-- overlay til burger -->
+        <div id="myNav" class="overlay">
+
+            <!-- Knap til overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="kategori.html">Recipes</a>
+                <a href="forside.html">About us</a>
+            </div>
+
+        </div>
+
+        <nav class="header-menu">
+            <ul>
+                <li><a href="kategori.html">Recipes</a></li>
+                <li><a href="forside.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="hero">
+
+            <div class="logo-container">
+                <img src="billeder/lillelogo.webp" alt="UMAMIFY" class="stortlogo">
+            </div>
+
+            <div class="pil-container">
+                <a href="#about-us">
+                    <img src="billeder/forsidepil.webp" alt="pil" class="pil1">
+                </a>
+            </div>
+        </div>
+
+        <section id="about-us" class="about-section">
+            <div class="about-content">
+                <h1><strong>About</strong> us</h1>
+                <p>Welcome to our website, where you'll find delicious recipes for food and drinks - easy, simple, and
+                    straightforward!
+                    Whether you're new to the kitchen or an experienced chef, we have inspiring dishes for every taste.
+                    Make
+                    cooking more
+                    enjoyable with our step-by-step guides and great tips.</p>
+
+                <div class="pil2-container">
+                    <a href="kategoriside.html">
+                        <img src="billeder/arrow.webp" alt="gå til kategori" class="arrow">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-logo">
+            <img src="billeder/lillelogo.webp" alt="footer logo">
+        </div>
+
+        <div class="contact-container">
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="NAVN">
+                    <input type="text" placeholder="EMAIL">
+                </div>
+                <div class="form-bottom">
+                    <input type="text" placeholder="EMNE" class="form-text">
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sobo0001@stud.kea.dk" class="social-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://open.spotify.com/playlist/3lwd1Ek6uaFA6BX6pHwvRJ?si=f954d26d1e6444f7" target="_blank"><i
+                    class="fab fa-spotify"></i></a>
+        </div>
+
+    </footer>
+
+
+    <script src="base.js"></script>
+</body>
+
+</html>
