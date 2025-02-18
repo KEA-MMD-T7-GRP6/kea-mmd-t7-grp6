@@ -1,11 +1,15 @@
-const mymealtype = new URLSearchParams(window.location.search).get("recepies");
+const mymealtype = new URLSearchParams(window.location.search).get("category");
 const recipeContainer = document.querySelector(".galleri_container");
-const overskrift = document.querySelector("h1");
 const selectDifficulty = document.querySelector("#selectDifficulty");
 const selectCuisine = document.querySelector("#selectCuisine");
 
+const overskrift = document.querySelector("h2");
+overskrift.innerHTML = mymealtype || "All Recipes"; // Vis 'mealtype' i overskriften, eller en standardtekst hvis det er null
+
+console.log(mymealtype);
+
 function showRecipes() {
-  fetch(`https://dummyjson.com/recipes?mealtype=${mymealtype}`)
+  fetch(`https://dummyjson.com/recipes`)
     .then((response) => response.json())
     .then((data) => {
       const selectedDifficulty = selectDifficulty.value;
@@ -31,6 +35,15 @@ function getDifficultyColor(difficulty) {
   }
 }
 
+window.addEventListener("DOMContentLoaded", function () {
+  const h2 = document.querySelector("h2");
+  if (h2) {
+    let text = h2.textContent;
+    let lastTwo = text.slice(-2);
+    h2.innerHTML = text.slice(0, -2) + '<span class="italic">' + lastTwo + "</span>";
+  }
+});
+
 function showList(recipes, selectedDifficulty, selectedCuisine) {
   const filteredRecipes = recipes.filter((recipe) => {
     // Filtrér på sværhedsgrad
@@ -45,6 +58,11 @@ function showList(recipes, selectedDifficulty, selectedCuisine) {
       if (!recipe.cuisine || recipe.cuisine.toLowerCase() !== selectedCuisine.toLowerCase()) {
         return false;
       }
+    }
+
+    // Filtrér på mealType
+    if (mymealtype && !recipe.mealType.includes(mymealtype)) {
+      return false;
     }
 
     return true;

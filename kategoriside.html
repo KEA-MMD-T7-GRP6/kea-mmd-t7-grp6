@@ -12,12 +12,45 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="logo">
+            <a href="forside.html">
+                <img src="billeder/lillelogo.webp" alt="lillelogo">
+            </a>
+        </div>
+
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+        <!-- overlay til burger -->
+        <div id="myNav" class="overlay">
+
+            <!-- Knap til overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="kategori.html">Recipes</a>
+                <a href="forside.html">About us</a>
+            </div>
+
+        </div>
+
+        <nav class="header-menu">
+            <ul>
+                <li><a href="kategori.html">Recipes</a></li>
+                <li><a href="forside.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
 
     <main>
-        <h1><b>Beverag</b><span class="italic">es</span></h1>
+        <h2></h2>
         <hr class="separator">
 
         <div class="filter-section">
@@ -54,7 +87,34 @@
         <div class="grid1-1-1 galleri_container">
         </div>
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="billeder/lillelogo.webp" alt="footer logo">
+        </div>
+
+        <div class="contact-container">
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="NAVN">
+                    <input type="text" placeholder="EMAIL">
+                </div>
+                <div class="form-bottom">
+                    <input type="text" placeholder="EMNE" class="form-text">
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sobo0001@stud.kea.dk" class="social-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://open.spotify.com/playlist/3lwd1Ek6uaFA6BX6pHwvRJ?si=f954d26d1e6444f7" target="_blank"><i
+                    class="fab fa-spotify"></i></a>
+        </div>
+
+    </footer>
+    <script src="base.js"></script>
 </body>
 
 </html>
