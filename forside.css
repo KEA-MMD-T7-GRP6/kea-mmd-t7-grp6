@@ -35,15 +35,15 @@ html {
 .logo-container {
   width: 100%;
   position: absolute;
-  top: 15%;
+  top: 19%;
   padding: 30px;
 }
 
 /********* styling af pil forside *******/
 .pil-container {
   position: absolute;
-  top: 45%;
-  left: 55%;
+  top: 40%;
+  left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 40px;
   height: 100vh;
   background-image: url("billeder/aboutus.webp");
   background-size: cover;
