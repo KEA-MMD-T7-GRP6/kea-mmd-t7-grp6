@@ -1,0 +1,204 @@
+.body_opskrift {
+  background-color: #ffffed;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.pink_box {
+  padding-top: 50px;
+  background-color: #ffcbcb;
+  border-color: #8c3929;
+  border-radius: 45px;
+  padding-inline: 60px;
+  padding: 43px;
+}
+
+.h2_pink {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 31px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.prep,
+.cook {
+  color: #8c3929;
+  font-family: "Caveat", serif;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.li {
+  color: black;
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.ol,
+.ul {
+  padding-bottom: 40px;
+}
+
+.li::marker {
+  color: #8c3929;
+  font-family: "Caveat", serif;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.pink_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.personer {
+  text-align: right;
+  color: #8c3929;
+  font-family: "Caveat", serif;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.ingredients,
+.instructions {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.flexboks {
+  padding-top: 50px;
+  padding: 20px;
+}
+
+.opskrift_billede {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+@media (max-width: 750px) {
+  .gulderod {
+    display: none;
+  }
+
+  .spotify {
+    display: none;
+  }
+}
+
+@media (min-width: 750px) {
+  .gulderod {
+    object-fit: cover;
+    position: relative;
+  }
+
+  .spotify {
+    width: 63%;
+  }
+
+  /* .flexboks {
+    display: grid;
+    justify-content: center; /* Centrerer vandret */
+  /* align-items: center; /* Centrerer lodret */
+  /* height: 100vh;
+  } */
+
+  .opskrift_billede {
+    aspect-ratio: 16/4;
+    object-fit: cover;
+    /* padding-bottom: 200px; */
+  }
+
+  .pink_box {
+    padding-top: 50px;
+    background-color: #ffcbcb;
+    border-color: #8c3929;
+    border-radius: 45px;
+    padding-inline: 60px;
+    padding: 65px;
+    width: 700px; /* Giv den en bredde */
+    position: absolute;
+    top: 130%; /* Placér toppen af elementet på 50% af skærmens højde */
+    left: 50%; /* Placér venstre kant af elementet på 50% af skærmens bredde */
+    transform: translate(-50%, -50%);
+  }
+
+  .h2_pink {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .prep,
+  .cook {
+    color: #8c3929;
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+  .li {
+    color: black;
+    font-family: "Lora", serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .ol,
+  .ul {
+    padding-bottom: 40px;
+  }
+
+  .tid {
+    padding-bottom: ;
+  }
+
+  .li::marker {
+    color: #8c3929;
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+  .pink_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .personer {
+    text-align: right;
+    color: #8c3929;
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+  .ingredients,
+  .instructions {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+  }
+}
