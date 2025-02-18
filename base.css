@@ -96,6 +96,27 @@ header {
   background-color: #8c3929;
 }
 
+h1 strong {
+  font-family: "Roboto", Condensed Bold;
+  font-size: 50px;
+  color: #4d9775;
+}
+
+h1 {
+  font-family: "Roboto", Condensed Italic;
+  font-size: 50px;
+  color: #4d9775;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Lora", serif;
+  margin-top: 20px;
+  line-height: 170%;
+}
+
 /**** Media query til store skærme  ******/
 @media screen and (min-width: 768px) {
   .burger {
