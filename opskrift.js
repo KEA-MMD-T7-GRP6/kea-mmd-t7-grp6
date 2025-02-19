@@ -1,5 +1,5 @@
-const myRecipe = new URLSearchParams(window.location.search);
-const recipeId = myRecipe.get("recipes");
+const myProduct = new URLSearchParams(window.location.search);
+const productId = myProduct.get("id");
 // console.log("recipeId:", recipeId);
 
 let productContainer = document.querySelector(".productContainer");
@@ -10,7 +10,7 @@ fetch(`https://dummyjson.com/recipes/${recipeId}`)
   .then((recipe) => {
     // console.log("recipe:", recipe);
     productContainer.innerHTML = `
-      <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="" class="opskrift_billede">
+      <img src="https://cdn.dummyjson.com/recipe-images/${productId}.webp" alt="" class="opskrift_billede">
       <img src="billeder/klara_opskrift.png" alt="" class="gulderod">
       
       <div class="flexboks">
