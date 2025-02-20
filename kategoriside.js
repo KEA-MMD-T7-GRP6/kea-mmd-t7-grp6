@@ -73,7 +73,7 @@ function showList(recipes, selectedDifficulty, selectedCuisine) {
       const { backgroundColor, color } = getDifficultyColor(recipe.difficulty);
       const totalTime = (recipe.prepTimeMinutes || 0) + (recipe.cookTimeMinutes || 0);
 
-      return `<a href="opskrit.html?category=${recipe.id}" class="card">
+      return `<a href="opskrit.html?id=${recipe.id}" class="card">
                 <div class="image_container">
                     <img src="${recipe.image || "default-image.jpg"}" alt="${recipe.name || "Recipe Image"}">
                     <div class="difficulty" style="background-color: ${backgroundColor}; color: ${color};">

@@ -64,6 +64,12 @@ img {
   border-radius: 10px;
   background-color: #ffffed;
   text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #00000033;
 }
 
 .h3_card {

@@ -131,7 +131,7 @@
     padding: 65px;
     width: 700px; /* Giv den en bredde */
     position: absolute;
-    top: 130%; /* Placér toppen af elementet på 50% af skærmens højde */
+    top: 150%; /* Placér toppen af elementet på 50% af skærmens højde */
     left: 50%; /* Placér venstre kant af elementet på 50% af skærmens bredde */
     transform: translate(-50%, -50%);
   }
@@ -164,10 +164,6 @@
   .ol,
   .ul {
     padding-bottom: 40px;
-  }
-
-  .tid {
-    padding-bottom: ;
   }
 
   .li::marker {
