@@ -29,9 +29,9 @@ html {
 
 /****** logo styling ******/
 .logo-container {
-  width: 100%;
+  width: 90%;
   position: absolute;
-  top: 29%;
+  top: 30%;
   padding: 20px;
 }
 
@@ -88,7 +88,7 @@ html {
 
   .logo-container {
     width: 70%;
-    top: 30%;
+    top: 25%;
   }
 
   .about-section {
@@ -128,11 +128,11 @@ html {
 @media screen and (min-width: 1024px) {
   .logo-container {
     width: 50%;
-    top: 30%;
+    top: 25%;
     left: 25%;
   }
   .pil-container {
-    margin-top: 70px;
+    margin-top: 90px;
     width: 70px;
   }
   .pil2-container {

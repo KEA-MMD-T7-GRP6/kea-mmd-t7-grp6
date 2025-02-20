@@ -137,10 +137,10 @@ p {
 
 .social-links a {
   color: #c4fad7;
-  padding: 30px;
   font-size: 35px;
   margin-right: 20px;
   align-items: center;
+  margin-left: 50px;
 }
 
 .social-links a:hover {
@@ -229,10 +229,6 @@ button:hover {
   .header-menu a:hover {
     text-decoration: underline;
     color: #780000;
-  }
-
-  footer {
-    background-color: #8c3929;
   }
 
   .footer-logo {
