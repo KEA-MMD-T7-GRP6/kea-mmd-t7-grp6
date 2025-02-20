@@ -42,7 +42,7 @@ html {
 /********* styling af pil forside *******/
 .pil-container {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
