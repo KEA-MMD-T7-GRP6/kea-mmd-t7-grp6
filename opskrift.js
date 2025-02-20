@@ -1,5 +1,5 @@
 const myProduct = new URLSearchParams(window.location.search);
-const productId = myProduct.get("id");
+const recipeId = myProduct.get("id");
 // console.log("recipeId:", recipeId);
 
 let productContainer = document.querySelector(".productContainer");
@@ -10,8 +10,8 @@ fetch(`https://dummyjson.com/recipes/${recipeId}`)
   .then((recipe) => {
     // console.log("recipe:", recipe);
     productContainer.innerHTML = `
-      <img src="https://cdn.dummyjson.com/recipe-images/${productId}.webp" alt="" class="opskrift_billede">
-      <img src="billeder/klara_opskrift.png" alt="" class="gulderod">
+      <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="" class="opskrift_billede">
+      <img src="billeder/klara_opskrift.webp" alt="" class="gulderod">
       
       <div class="flexboks">
            
@@ -27,9 +27,9 @@ fetch(`https://dummyjson.com/recipes/${recipeId}`)
           <div class="pink_1_1">
                      
           <ul class="ul">
-  ${recipe.ingredients.map((ingredient) => `<li class="li">${ingredients}</li>`).join("")}
+  ${recipe.ingredients.map((ingredients) => `<li class="li">${ingredients}</li>`).join("")}
 </ul>
-<img src="billeder/klara_spotify.png" alt="" class="spotify">
+<img src="billeder/klara_spotify.webp" alt="" class="spotify">
    </div>
  <h3 class="instructions">Instructions</h3>
           <ol class="ol">
