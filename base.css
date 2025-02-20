@@ -221,6 +221,9 @@ button:hover {
   }
 
   .header-menu a {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 200;
     text-decoration: none;
     font-size: 26px;
     color: #c4fad7;
