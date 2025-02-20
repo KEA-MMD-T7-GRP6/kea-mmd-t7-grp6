@@ -1,0 +1,201 @@
+body {
+  background-color: #ffffed !important;
+}
+main {
+  margin-inline: 2rem;
+}
+
+h2 {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  color: #4d9775;
+  font-size: 12vmin;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+.difficulty {
+  font-family: "caveat-brush", sans-serif;
+}
+.separator {
+  width: calc(100% - 1rem);
+  height: 2px;
+  background-color: black;
+  margin: 3vw auto 1vw auto;
+  color: #8c3929;
+}
+
+.grid1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1vw;
+  text-decoration: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+p,
+h3 {
+  padding-inline: 1rem;
+  font-family: roboto;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #00000033;
+}
+
+.card h3 {
+  display: inline-block;
+  color: black;
+  font-size: 25px;
+  margin-right: 2rem;
+}
+
+.card .rating {
+  display: inline-block;
+  position: absolute;
+  margin-left: auto;
+  top: -12%;
+  right: 2%;
+}
+.card-header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 1rem;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 1rem;
+  margin-top: auto; /* Sørg for at footer altid er i bunden */
+}
+
+.card-footer p,
+.card-header p {
+  font-family: roboto;
+  color: #6e6c6c;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Lidt afstand mellem ikon og tekst */
+}
+
+.card-footer img,
+.card-header img {
+  width: 20px; /* Juster efter behov */
+  height: auto;
+  display: inline-block;
+}
+
+.image_container {
+  object-fit: cover;
+  position: relative;
+}
+
+.card-header .rating {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6e6c6c;
+  margin-left: 1rem; /* Lidt afstand fra tekst */
+  flex-shrink: 0; /* Sørg for, at vurderingen ikke bliver komprimeret */
+}
+.card-header .rating img {
+  width: 30px;
+  height: auto;
+}
+.rating img {
+  width: 30px;
+  height: auto;
+  position: relative; /* Gør det muligt at justere placeringen */
+  top: 5px; /* Juster denne værdi for at flytte stjernen ned */
+}
+
+.difficulty {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #8c3929;
+  color: #ffffed;
+  font-size: 1vw;
+  padding: 7px 12px;
+  font-size: 15px;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.filter-section {
+  display: flex;
+  gap: 15px;
+  padding-left: 1rem;
+  max-width: 700px;
+  margin: 30px 0; /* Fjernte auto-marginen for at få det til at stå til venstre */
+  justify-content: flex-start; /* Juster for venstre justering */
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+}
+
+label {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  background-color: #ffffed;
+  border: 1px solid black;
+  border-radius: 6px;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+select:focus {
+  border-color: #8c3929;
+  background-color: #ffffed;
+  outline: none;
+}
+
+select option {
+  padding: 8px 12px;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start; /* Juster for venstre justering på små skærme */
+  }
+  .filter-item {
+    margin-bottom: 20px;
+  }
+  .card {
+    margin: 1.5rem;
+  }
+}

@@ -21,6 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background-color: #8c3929;
+  padding: 30px;
 }
 
 .logo {
@@ -124,6 +126,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #8c3929;
 }
 
 .footer-logo {
@@ -221,13 +224,17 @@ button:hover {
     text-decoration: none;
     font-size: 26px;
     color: #c4fad7;
-    font-family: "Roboto", Thin 100 Italic;
   }
 
   .header-menu a:hover {
     text-decoration: underline;
     color: #780000;
   }
+
+  footer {
+    background-color: #8c3929;
+  }
+
   .footer-logo {
     max-width: 14%;
     margin-top: 15px;

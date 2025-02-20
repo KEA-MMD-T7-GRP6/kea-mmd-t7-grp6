@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="kategori.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barrio&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,300;1,300&family=Notable&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="kategori_body">
+    <header>
+        <div class="logo">
+            <a href="forside.html">
+                <img src="billeder/lillelogo.webp" alt="lillelogo">
+            </a>
+        </div>
+
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+        <!-- overlay til burger -->
+        <div id="myNav" class="overlay">
+
+            <!-- Knap til overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="kategori.html">Recipes</a>
+                <a href="forside.html">About us</a>
+            </div>
+
+        </div>
+
+        <nav class="header-menu">
+            <ul>
+                <li><a href="kategori.html">Recipes</a></li>
+                <li><a href="forside.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <div class="recipes_hero">
+            <h2 class="h2_kopi">Recip<span class="h2_italic">es</span></h2>
+            <p class="decription">Here, you'll find delicious, modern, and user-friendly recipes that make cooking a
+                breeze.
+                Whether you're a
+                beginner or
+                a kitchen expert, there's inspiration fors every taste.</p>
+
+            <img src="billeder/kategori_gaffel.webp" alt="" class="gaffel">
+        </div>
+
+
+        <div class="category_list_container">
+
+
+            <!-- 
+            <a href="kategoriside.html" class="card">
+                <img src="" alt="">
+                <h3 class="h3_card">Dinner</h3>
+            </a> -->
+            <!-- 
+
+            <a href="kategoriside.html" class="card">
+                <img src="" alt="">
+                <h3 class="h3_card">Breakfast</h3>
+            </a>
+            <a href="kategoriside.html" class="card">
+
+                <img src="" alt="">
+                <h3 class="h3_card">Lunch</h3>
+
+            </a>
+            <a href="kategoriside.html" class="card">
+
+                <img src="" alt="">
+                <h3 class="h3_card">Dessert</h3>
+
+            </a>
+            <a href="kategoriside.html" class="card">
+
+                <img src="" alt="">
+                <h3 class="h3_card">Beverages</h3>
+
+            </a> -->
+
+
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer-logo">
+            <img src="billeder/lillelogo.webp" alt="footer logo">
+        </div>
+
+        <div class="contact-container">
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="NAVN">
+                    <input type="text" placeholder="EMAIL">
+                </div>
+                <div class="form-bottom">
+                    <input type="text" placeholder="EMNE" class="form-text">
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sobo0001@stud.kea.dk" class="social-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://open.spotify.com/playlist/3lwd1Ek6uaFA6BX6pHwvRJ?si=f954d26d1e6444f7" target="_blank"><i
+                    class="fab fa-spotify"></i></a>
+        </div>
+    </footer>
+    <script src="kategori.js"></script>
+
+</body>
+
+</html>
