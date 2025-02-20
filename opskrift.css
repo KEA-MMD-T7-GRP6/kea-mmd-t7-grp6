@@ -82,6 +82,8 @@
 .flexboks {
   padding-top: 50px;
   padding: 20px;
+  background-image: url(billeder/klara_opskrift.webp);
+  height: 190vh;
 }
 
 .opskrift_billede {
@@ -130,8 +132,8 @@
     padding-inline: 60px;
     padding: 65px;
     width: 700px; /* Giv den en bredde */
-    position: absolute;
-    top: 150%; /* Placér toppen af elementet på 50% af skærmens højde */
+    position: relative;
+    top: 50%; /* Placér toppen af elementet på 50% af skærmens højde */
     left: 50%; /* Placér venstre kant af elementet på 50% af skærmens bredde */
     transform: translate(-50%, -50%);
   }
