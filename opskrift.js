@@ -11,7 +11,6 @@ fetch(`https://dummyjson.com/recipes/${recipeId}`)
     // console.log("recipe:", recipe);
     productContainer.innerHTML = `
       <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="" class="opskrift_billede">
-      <img src="billeder/klara_opskrift.webp" alt="" class="gulderod">
       
       <div class="flexboks">
            
